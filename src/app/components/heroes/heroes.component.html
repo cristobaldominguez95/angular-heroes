@@ -2,13 +2,14 @@
   <h1>Heroes</h1>
   <hr>
   <div class="card-columns">
-    <div *ngFor="let hero of heroes" class="card">
+    <div *ngFor="let hero of heroes; let index = index" class="card">
       <img class="card-img-top" [src]="hero.img" [alt]="hero.name">
       <div class="card-body">
         <h5 class="card-title">{{ hero.name }}</h5>
         <p class="card-text">{{ hero.biography }}</p>
         <p class="card-text"><small class="text-muted">{{ hero.appearance }}</small></p>
-        <button class="btn btn-outline-primary btn-block">Show hero</button>
+        <!-- <button class="btn btn-outline-primary btn-block">Show hero</button> -->
+        <a [routerLink]="['/hero', index]" class="btn btn-outline-primary btn-block">Show hero</a>
       </div>
     </div>
   </div>

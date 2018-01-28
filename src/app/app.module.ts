@@ -9,6 +9,7 @@ import { AboutComponent } from './components/about/about.component';
 import { HeroesComponent } from './components/heroes/heroes.component';
 import { AppRoutingModule } from './app-routing.module';
 import { HeroService } from './services/hero.service';
+import { HeroComponent } from './components/hero/hero.component';
 
 
 @NgModule({
@@ -17,7 +18,8 @@ import { HeroService } from './services/hero.service';
     NavbarComponent,
     HomeComponent,
     AboutComponent,
-    HeroesComponent
+    HeroesComponent,
+    HeroComponent
   ],
   imports: [
     BrowserModule,
