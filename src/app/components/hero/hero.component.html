@@ -1,6 +1,6 @@
 <div class="container animated fadeIn">
-  <h1>{{ hero.name }}
-    <small>{{ hero.appearance }}</small>
+  <h1>{{ hero.name | uppercase }}
+    <small>({{ hero.appearance | date:'y' }})</small>
   </h1>
   <hr>
   <div class="row">
